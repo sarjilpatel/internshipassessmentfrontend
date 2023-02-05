@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import AddInfluencer from "./Components/AddInfluencer/AddInfluencer";
+import EditInfluencer from "./Components/EditInfluencer/EditInfluencer";
+import Header from "./Components/Header/Header";
+import Influencers from "./Components/Influencers/Influencers";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Influencers />} />
+        <Route path="/addinfluencer" element={<AddInfluencer />} />
+        <Route path="/editinfluencer/:id" element={<EditInfluencer />} />
+      </Routes>
     </div>
   );
 }

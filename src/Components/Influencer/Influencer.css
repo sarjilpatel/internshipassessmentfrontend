@@ -1,0 +1,61 @@
+.influencer {
+  display: flex;
+  min-height: 50px;
+  min-width: 80%;
+  padding: 0px 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+p.name {
+  width: 30%;
+  font-size: 20px;
+  font-weight: 500;
+}
+p.followers {
+  font-size: 20px;
+  font-weight: 500;
+  width: 20%;
+}
+
+.edit {
+  background-color: white;
+  color: rgb(111, 164, 255);
+  border: none;
+  transition: 0.3s all;
+}
+
+.edit:hover {
+  color: rgb(40, 119, 255);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+button.delete {
+  background-color: white;
+  color: rgb(255, 104, 104);
+  border: none;
+  transition: 0.3s all;
+}
+button.delete:hover {
+  color: rgb(255, 63, 63);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.lable {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  font-weight: lighter;
+}

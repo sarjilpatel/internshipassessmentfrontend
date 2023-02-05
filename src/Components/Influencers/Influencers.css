@@ -1,0 +1,188 @@
+.influencers {
+  height: 80vh;
+  width: 80vw;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 30px 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.influencers_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+  gap: 50px;
+}
+
+.influencers_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0px;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  gap: 20px;
+}
+
+.influencers_wrapper::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  margin-right: 5px;
+}
+
+.influencers_wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.influencers_wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+.influencers_wrapper::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+button.addButton {
+  border: none;
+  background-color: rgb(136, 182, 255);
+}
+
+input.search_input {
+  height: 40px;
+  width: 30%;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0px 10px;
+}
+input.search_input:focus {
+  outline: none;
+}
+
+/* CSS */
+.addButton {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.addButton:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.addButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.addButton:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.add_influencer_model {
+  height: 80vh;
+  width: 60vh;
+  margin: auto auto;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(229, 229, 229);
+  border-radius: 10px;
+}
+
+.inputs_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.model {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input.custom_input {
+  width: 70%;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0px 10px;
+}
+input.custom_input:focus {
+  outline: none;
+}
+
+button.submit_button {
+}
+
+select.social_media {
+  width: 75%;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0px 10px;
+}
+
+select.sort_by {
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0px 10px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.select_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.select_wrapper > p {
+  font-size: 13px;
+}
